@@ -3,12 +3,17 @@
 #include <math.h>
 
 float f(float x) {
-    return x * x * x + 2;
+    return exp(-pow(x, 2)); // f(x) = e^(x^2) using pow function
 }
 
 int main() {
-    int x1 = 2, x2 = 8;
+    float x1, x2;
     float h, v;
+
+    printf("Enter the value of lower limit: ");
+    scanf("%f", &x1);
+    printf("Enter the value of upper limit: ");
+    scanf("%f", &x2);
 
     h = x2 - x1;
 

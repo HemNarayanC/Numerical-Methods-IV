@@ -9,7 +9,7 @@ float f(float x) {
 
 int main() {
     float x0, x1, x2;
-    float e = -0.001, Err = 1; // Tolerance and error
+    float e = 0.001, Err = 1; // Tolerance and error
     int itr = 1;
 
     // Input initial guesses
